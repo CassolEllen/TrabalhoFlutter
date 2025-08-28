@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trabalho/sorteioscreen.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -40,9 +41,21 @@ class CustomDrawer extends StatelessWidget {
             title: const Text('Sair'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushReplacementNamed(context, "/login"); // rota opcional
+              Navigator.pushReplacementNamed(context, "/login");
             },
           ),
+
+          ListTile(
+            leading: const Icon(Icons.casino),
+            title: const Text("Sorteio"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SorteioPage()),
+              );
+            },
+          ),
+
         ],
       ),
     );
