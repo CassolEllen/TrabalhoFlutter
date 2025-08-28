@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'custom_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,14 +8,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Boas-vindas")),
-      body: const Center(
-        child: Text(
-          " Bem-vindo veir juro!",
-          style: TextStyle(
-            fontSize: 26,
-            fontWeight: FontWeight.bold,
-            color: Colors.deepPurple,
-          ),
+      drawer: const CustomDrawer(),
+      body: Center(
+        child: Image.asset(
+          "assets/images/image2.jpg",
+          width: 900,
+          height: 900,
+          fit: BoxFit.contain,
         ),
       ),
     );
