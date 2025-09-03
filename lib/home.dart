@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Boas-vindas")),
+      appBar: AppBar(title: const Text("Aqui ó")),
       drawer: const CustomDrawer(),
       body: Center(
         child: Image.asset(

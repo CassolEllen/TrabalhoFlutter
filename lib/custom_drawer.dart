@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trabalho/sorteioscreen.dart';
+import 'package:trabalho/calculadora.dart';
+import 'package:trabalho/sobre.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -44,18 +45,26 @@ class CustomDrawer extends StatelessWidget {
               Navigator.pushReplacementNamed(context, "/login");
             },
           ),
-
           ListTile(
-            leading: const Icon(Icons.casino),
-            title: const Text("Sorteio"),
+            leading: const Icon(Icons.format_list_bulleted),
+            title: const Text('Sobre esse projetinho rsrs'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const SorteioPage()),
+                MaterialPageRoute(builder: (context) => const SobrePage()),
               );
             },
           ),
-
+          ListTile(
+            leading: const Icon(Icons.calculate),
+            title: const Text("Calculadora"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CalculadoraPage()),
+              );
+            },
+          ),
         ],
       ),
     );
