@@ -1,4 +1,4 @@
-# trabalho
+# Calculadora com gatinhos em flutter
 
 A new Flutter project.
 
